@@ -7,7 +7,6 @@
     <title>jQuery Discussion 2</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="jquery-3.6.0.js"></script>
-    <script src="jQuery.js"></script>
 </head>
 <body>
     <p id="second">Welcome to jQuery 1</p>
@@ -24,7 +23,13 @@
         //id selector
         $('#second').click();
         //class selector
-        //$('.Test').click();
+        $('.Test').click();
+        //Ohter selector
+        $('*').click(); //clicks on all elements 
+        //Specific selector
+        $('p.Test').click();
+        //Specific selector
+        $('p:first').click(); //will select the first paragraph
     });
 </script>
 </html>
