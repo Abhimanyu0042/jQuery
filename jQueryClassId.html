@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Discussion 2</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="jquery-3.6.0.js"></script>
+    <script src="jQuery.js"></script>
+</head>
+<body>
+    <p id="second">Welcome to jQuery 1</p>
+    <p class="Test">Welcome to jQuery 2</p>
+    <p class="Test">Welcome to jQuery 3</p>
+    <p>Welcome to jQuery 4</p>
+</body>
+<script>
+    $(document).ready(function() {
+        $('p').click(function() {
+            console.log('you clicked on p', this)
+        });
+        //Note: when we load the web page below jQuery will return
+        //id selector
+        $('#second').click();
+        //class selector
+        //$('.Test').click();
+    });
+</script>
+</html>
