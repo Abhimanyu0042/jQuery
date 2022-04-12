@@ -19,4 +19,18 @@ $(document).ready(function() {
         // console.log('you entered p', this);
      //});
 
+     //MOUSE LEAVE EVENT
+
+     //$('p').mouseleave(function(){
+       // console.log('you leave from p', this)
+     //});
+
+     // MOUSE HOVER EVENT
+
+     $('p').hover(function(){
+        console.log('you hovered on p', this)},
+        function(){
+           console.log("Exiting...!")
+     })
+
     });
