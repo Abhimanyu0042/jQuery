@@ -1,20 +1,19 @@
-<!--$("p").append("Some appended text.");--->
+<!---$("p").prepend("Some prepended text.");-->
 
-
-<!DOCTYPE html>
+!DOCTYPE html>
 <html>
 
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.
 min.js"></script>
-<script src="jquery-3.6.0.js"></script>
+<script src ="jquery-3.6.0.js"></script>
     <script>
         $(document).ready(function () {
             $("#btn1").click(function () {
-                $("p").append(" <b>Appended text</b>.");
+                $("p").prepend("<b>Prepended text</b>. ");
             });
             $("#btn2").click(function () {
-                $("ol").append("<li>Appended item</li>");
+                $("ol").prepend("<li>Prepended item</li>");
             });
         });
     </script>
@@ -23,13 +22,13 @@ min.js"></script>
 <body>
     <p>This is a paragraph.</p>
     <p>This is another paragraph.</p>
-    <ol>//ordered list
+    <ol>
         <li>List item 1</li>
         <li>List item 2</li>
         <li>List item 3</li>
     </ol>
-    <button id="btn1">Append text</button>
-    <button id="btn2">Append list items</button>
+    <button id="btn1">Prepend text</button>
+    <button id="btn2">Prepend list item</button>
 </body>
 
 </html>
